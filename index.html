@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="icon" href="./imagens/iconSite.png">
+    <link rel="stylesheet" href="main.css">
+
+    <title>LorenBap Travel</title>
+
+</head>
+<body>
+
+    <header>
+        <div id="headerFixo" class="container titulo">
+                <div>
+                    <h2>LorenBap <i>Travels</i></h2>
+                    <h4 id="fraseInicial">Planeje sua viagem dos sonhos agora mesmo!</h4>
+                </div>
+
+                <div class="titulo d-block">
+                    <div class="dropdown">
+                        <button id="buttonLogin" data-bs-toggle="dropdown" class="btn btn-primary d-flex ms-auto align-items-center dropdown-toggle" type="button">Entrar/Cadastrar</button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li class="dropdown-item">
+                                <a href="#">Entrar</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#">Cadastrar</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="d-flex">
+                        <form class="d-flex">
+                            <input class="form-control me-1" type="search" title="Digite o local da sua próxima viagem!" placeholder="Busque no site" id="campoBuscar" >
+                            <button class="btn btn-primary d-flex align-items-center justify-content-center" type="button"><img src="./imagens/iconeLupa.png"> Pesquisar</button>
+                        </form>
+                        <a href="#">
+                            <img src="./imagens/iconCarrinho.png" alt="Carrinho" title="Carrinho de compras">
+                        </a>
+                    </div>
+                    
+                </div>
+        </div>
+
+    </header>
+    
+    <section class="secaoMenu">
+        <div class="container menu">
+            <a href="#pacotes">
+                <h4>Pacotes de Viagens</h4>
+            </a>
+            <a href="#contato">
+                <h4>Contato</h4>
+            </a>
+        </div>
+    </section>
+
+    <section id="carouselInicial">
+        <div class="carousel slide carousel-fade" data-bs-ride="carousel" id="carouselGeral">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="./imagens/caroucel/lagoDiBraies.jpg" alt="Lago Di Braies, Italia">
+                    <div class="carousel-caption">
+                        <h4>Lago Di Braies, Italia</h4>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./imagens/caroucel/angraDosReis.jpg" alt="Angra Dos Reis, Brasil" >
+                    <div class="carousel-caption" id="Angra">
+                        <h4>Angra Dos Reis, Brasil</h4>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./imagens/caroucel/nhaTrang.jpg" alt="Nha Trang, Vietnã">
+                    <div class="carousel-caption">
+                        <h4>Nha Trang, Vietnã</h4>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="carousel-control-prev" data-bs-target="#carouselGeral" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon p-0"></span>
+            </button>
+            <button type="button" class="carousel-control-next" data-bs-target="#carouselGeral" data-bs-slide="next">
+                <span class="carousel-control-next-icon p-0"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" class="active" data-bs-target="#carouselGeral" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carouselGeral" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carouselGeral" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="pacotes">
+        <div class="container">
+            <h2 id="pacotesTitulo">Pacotes de viagens</h2>
+        </div>
+        <div class="container">
+            <nav class="nav nav-tabs">
+                <button data-bs-toggle="tab" data-bs-target="#aba1" class="nav-link active" type="button">Pacotes Nacionais</button>
+                <button data-bs-toggle="tab" data-bs-target="#aba2" class="nav-link" type="button">Pacotes Internacionais   </button>
+            </nav>
+            <div class="tab-content">
+
+                <div class="tab-pane active" id="aba1">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="card">
+                                <img src="./imagens/nacional/Brasilia, DF.jpg" alt="">
+                                <div class="card-body">
+                                    <h4 class="card-title">Brasília, DF</h4>
+                                    <h6 class="card-subtitle">R$ 600,00/Diária</h6>
+                                    <p class="card-text">Explore a capital do Brasil e suas maravilhas arquitetônicas.</p>
+                                    <a class="btn btn-primary" href="#">Adicionar ao carrinho</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card">
+                                <img src="./imagens/nacional/Cataratas do Iguaçu, PR.jpg" alt="">
+                                <div class="card-body">
+                                    <h4 class="card-title">Cataratas do Iguaçu, PR</h4>
+                                    <h6 class="card-subtitle">R$ 850,00/Diária</h6>
+                                    <p class="card-text">Experimente a força e beleza das Cataratas do Iguaçu em um destino inesquecível.</p>
+                                    <a class="btn btn-primary" href="#">Adicionar ao carrinho</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card"> 
+                                <img src="./imagens/nacional/Copacabana, RJ.jpg" alt="">
+                                <div class="card-body">
+                                    <h4 class="card-title">Copacabana, RJ</h4>
+                                    <h6 class="card-subtitle">R$ 1.000,00/Diária</h6>
+                                    <p class="card-text">Desfrute das belezas de Copacabana, com suas famosas praias e vibrante vida noturna.</p>
+                                    <a class="btn btn-primary" href="#">Adicionar ao carrinho</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane" id="aba2">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="card">
+                                <img src="./imagens/internacional/Baviera Alemanha.jpg" alt="">
+                                <div class="card-body">
+                                    <h4 class="card-title">Baviera, Alemanha</h4>
+                                    <h6 class="card-subtitle">R$ 1.200,00/Diária</h6>
+                                    <p class="card-text">Explore a região encantadora da Baviera, com seus castelos deslumbrantes e paisagens naturais exuberantes. 
+                                        Um destino ideal para quem busca uma experiência cultural rica e um ambiente pitoresco.</p>
+                                    <a class="btn btn-primary" href="#">Adicionar ao carrinho</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card">
+                                <img src="./imagens/internacional/Lago Alpino de Valenstein,  Suiça.jpg" alt="">
+                                <div class="card-body">
+                                    <h4 class="card-title">Lago Alpino de Valenstein, Suiça</h4>
+                                    <h6 class="card-subtitle">R$ 1.500,00/Diária</h6>
+                                    <p class="card-text">Explore o encantador Lago Alpino de Valenstein, na Suíça. 
+                                        Um refúgio tranquilo cercado por montanhas majestosas, ideal para quem busca paz e beleza natural.</p>
+                                    <a class="btn btn-primary" href="#">Adicionar ao carrinho</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card">
+                                <img src="./imagens/internacional/Lago Wolfgang Áustria.jpg" alt="">
+                                <div class="card-body">
+                                    <h4 class="card-title">Lago Wolfgang, Áustria</h4>
+                                    <h6 class="card-subtitle">R$ 1.300,00/Diária</h6>
+                                    <p class="card-text">Descubra o deslumbrante Lago Wolfgang, na Áustria. 
+                                        Rodeado por paisagens alpinas e encantadoras vilas, é o destino perfeito para relaxar e aproveitar a beleza natural.</p>
+                                    <a class="btn btn-primary" href="#">Adicionar ao carrinho</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contato">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2 id="contatoTitulo">Entre em contato</h2>
+                    <div id="alertas-mensagens"></div> <!-- Aqui será informado os alertas de sucesso e de erro -->
+                    <form id="formulario">
+                        <label class="form-label" for="nome">Nome:</label>
+                        <input class="form-control" type="text" id="nome" name="nome">
+                        <label class="form-label" for="telefone">Telefone:</label>
+                        <input class="form-control" type="tel" id="telefone" name="telefone">
+                        <label class="form-label" for="email">Email:</label>
+                        <input class="form-control" type="email" name="email" id="email">
+                        <label class="form-label" for="mensagem">Digite sua mensagem:</label>
+                        <textarea class="form-control" name="mensagem" id="mensagem" maxlength="250"></textarea>
+                        <div class="form-check form-switch">
+                            <label class="form-check-label" for="aceito-termos">Li e concordo com os termos do site.</label>
+                            <input class="form-check-input" type="checkbox" id="aceito-termos" name="aceito-termos">
+                        </div>
+                        <button id="buttonForm" class="btn btn-success">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        2024 &copy; LorenBap Travel - Todos os direitos reservados.
+    </footer>
+
+
+
+
+
+
+
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./lib/jquery.validate.min.js"></script>
+    <script src="./lib/jquery.mask.min.js"></script>
+    <script src="./lib/messages_pt_BR.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
