@@ -117,7 +117,7 @@ $(document).ready(function(){
                 email: "Por favor, insira um email válido."
             },
             senhaCadastro: {
-                required: "Você deve digitar sua senha para entrar."
+                required: "Você deve digitar a senha para concluir o cadastro."
             }
         },
 
