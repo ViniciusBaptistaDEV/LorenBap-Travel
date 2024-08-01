@@ -39,10 +39,10 @@
                             <button id="buttonLogin" data-bs-toggle="dropdown" class="btn btn-primary d-flex ms-auto align-items-center dropdown-toggle" type="button">Entrar/Cadastrar</button>
                             <ul class="dropdown-menu dropdown-menu-dark">
                                 <li class="dropdown-item">
-                                    <a href="#">Entrar</a>
+                                    <a href="#modalLogin" data-bs-toggle="modal" data-bs-target="#modalLogin">Entrar</a>
                                 </li>
                                 <li class="dropdown-item">
-                                    <a href="#">Cadastrar</a>
+                                    <a href="#modalcadastro" data-bs-toggle="modal" data-bs-target="#modalcadastro">Cadastrar</a>
                                 </li>
                             </ul>
                         </div>
@@ -61,6 +61,58 @@
 
     </header>
     
+    <div class="modal fade" data-bs-backdrop="static" id="modalLogin">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4><b>Login</b></h4>
+                    <button type="button" data-bs-dismiss="modal" class="btn-close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="alertas-mensagens-login"></div>
+                    <form class="form" id="formLogin">
+                        <label class="form-label" for="emaillogin">Digite o email do Login:</label>
+                        <input class="form-control" type="email" name="emaillogin" id="emaillogin">
+                        <label class="form-label" for="senha">Digite sua senha:</label>
+                        <input class="form-control" type="password" id="senha" name="senha">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger" data-bs-dismiss="modal" type="button">CANCELAR</button>
+                    <button class="btn btn-success" type="button" id="buttonEntrar">ENTRAR</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" data-bs-backdrop="static" id="modalcadastro">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4><b>Cadastro</b></h4>
+                    <button type="button" data-bs-dismiss="modal" class="btn-close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="alertas-mensagens-cadastro"></div>
+                    <form class="form" id="formCadastro">
+                        <label class="form-label" for="nomeCadastro">Nome:</label>
+                        <input class="form-control" type="text" id="nomeCadastro" name="nomeCadastro">
+                        <label class="form-label" for="telefoneCadastro">Telefone:</label>
+                        <input class="form-control" type="tel" id="telefoneCadastro" name="telefoneCadastro">
+                        <label class="form-label" for="emailCadastro">Email:</label>
+                        <input class="form-control" type="email" name="emailCadastro" id="emailCadastro">
+                        <label class="form-label" for="senhaCadastro">Senha:</label>
+                        <input class="form-control" type="password" id="senhaCadastro" name="senhaCadastro">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger" data-bs-dismiss="modal" type="button">CANCELAR</button>
+                    <button class="btn btn-success" type="button" id="buttonCadastrar">FINALIZAR CADASTRO</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <section class="secaoMenu">
         <div class="container menu">
             <a href="#pacotes">
@@ -95,7 +147,7 @@
                 </div>
             </div>
             <button type="button" class="carousel-control-prev" data-bs-target="#carouselGeral" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon p-0"></span>
+                <span class="carousel-control-prev-icon"></span>
             </button>
             <button type="button" class="carousel-control-next" data-bs-target="#carouselGeral" data-bs-slide="next">
                 <span class="carousel-control-next-icon p-0"></span>
@@ -229,13 +281,12 @@
     </section>
 
     <footer>
-        2024 &copy; LorenBap Travel - Todos os direitos reservados.
+
+        <div class="container">
+            2024 &copy; LorenBap Travel - Todos os direitos reservados.
+        </div>
+        
     </footer>
-
-
-
-
-
 
 
     <script src="./lib/bootstrap.bundle.min.js"></script>

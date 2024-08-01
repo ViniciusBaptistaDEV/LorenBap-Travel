@@ -182,9 +182,6 @@ form input, form label, form textarea {
 }
 
 footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
     margin-top: 40px;
@@ -192,4 +189,10 @@ footer {
     color: black;
     font-weight: bold;
     font-size: 17px;
+}
+
+footer > .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
