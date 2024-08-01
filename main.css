@@ -52,6 +52,17 @@ header a img:hover {
     margin-left: 5px;
 }
 
+#buttonMenu {
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+#buttonMenu:focus, #buttonMenu:active {
+    outline: none;
+    box-shadow: none;
+}
+
 .dropdown-toggle::after {
     margin-left: 10px;
 }
