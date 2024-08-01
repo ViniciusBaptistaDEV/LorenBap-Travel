@@ -14,36 +14,50 @@
 <body>
 
     <header>
-        <div id="headerFixo" class="container titulo">
+
+        <div class="navbar navbar-expand-lg">
+
+            <div id="headerFixo" class="container titulo">
+
                 <div>
                     <h2>LorenBap <i>Travels</i></h2>
-                    <h4 id="fraseInicial">Planeje sua viagem dos sonhos agora mesmo!</h4>
+                    <h4 id="fraseInicial">Planeje a viagem dos seus sonhos agora mesmo!</h4>
                 </div>
 
-                <div class="titulo d-block">
-                    <div class="dropdown">
-                        <button id="buttonLogin" data-bs-toggle="dropdown" class="btn btn-primary d-flex ms-auto align-items-center dropdown-toggle" type="button">Entrar/Cadastrar</button>
-                        <ul class="dropdown-menu dropdown-menu-dark">
-                            <li class="dropdown-item">
-                                <a href="#">Entrar</a>
-                            </li>
-                            <li class="dropdown-item">
-                                <a href="#">Cadastrar</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="d-flex">
-                        <form class="d-flex">
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menuHamburguer  ">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="titulo">
+
+                    <div class="d-lg-flex navbar-collapse" id="menuHamburguer">
+                        <form class="d-lg-flex align-items-center">
                             <input class="form-control me-1" type="search" title="Digite o local da sua próxima viagem!" placeholder="Busque no site" id="campoBuscar" >
                             <button class="btn btn-primary d-flex align-items-center justify-content-center" type="button"><img src="./imagens/iconeLupa.png"> Pesquisar</button>
                         </form>
+                        <div class="dropdown botaoLogin align-items-center">
+                            <button id="buttonLogin" data-bs-toggle="dropdown" class="btn btn-primary d-flex ms-auto align-items-center dropdown-toggle" type="button">Entrar/Cadastrar</button>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li class="dropdown-item">
+                                    <a href="#">Entrar</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#">Cadastrar</a>
+                                </li>
+                            </ul>
+                        </div>
                         <a href="#">
                             <img src="./imagens/iconCarrinho.png" alt="Carrinho" title="Carrinho de compras">
                         </a>
                     </div>
                     
                 </div>
+
+            </div>
+
+
         </div>
+        
 
     </header>
     
@@ -107,7 +121,7 @@
 
                 <div class="tab-pane active" id="aba1">
                     <div class="row">
-                        <div class="col-4">
+                        <div class="col-lg-4 col-sm-12 col-md-6">
                             <div class="card">
                                 <img src="./imagens/nacional/Brasilia, DF.jpg" alt="">
                                 <div class="card-body">
@@ -118,7 +132,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-lg-4 col-sm-12 col-md-6">
                             <div class="card">
                                 <img src="./imagens/nacional/Cataratas do Iguaçu, PR.jpg" alt="">
                                 <div class="card-body">
@@ -129,7 +143,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-lg-4 col-sm-12 col-md-6">
                             <div class="card"> 
                                 <img src="./imagens/nacional/Copacabana, RJ.jpg" alt="">
                                 <div class="card-body">
@@ -145,7 +159,7 @@
 
                 <div class="tab-pane" id="aba2">
                     <div class="row">
-                        <div class="col-4">
+                        <div class="col-lg-4 col-sm-12 col-md-6">
                             <div class="card">
                                 <img src="./imagens/internacional/Baviera Alemanha.jpg" alt="">
                                 <div class="card-body">
@@ -157,7 +171,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-lg-4 col-sm-12 col-md-6">
                             <div class="card">
                                 <img src="./imagens/internacional/Lago Alpino de Valenstein,  Suiça.jpg" alt="">
                                 <div class="card-body">
@@ -169,7 +183,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-lg-4 col-sm-12 col-md-6">
                             <div class="card">
                                 <img src="./imagens/internacional/Lago Wolfgang Áustria.jpg" alt="">
                                 <div class="card-body">
@@ -230,5 +244,6 @@
     <script src="./lib/jquery.mask.min.js"></script>
     <script src="./lib/messages_pt_BR.min.js"></script>
     <script src="./main.js"></script>
+
 </body>
 </html>

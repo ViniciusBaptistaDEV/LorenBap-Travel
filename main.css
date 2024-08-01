@@ -48,9 +48,8 @@ header a img:hover {
     transform: scale(1.4);
 }
 
-#buttonLogin {
-    margin-bottom: 10px;
-    padding-left: 10px;
+.botaoLogin {
+    margin-left: 5px;
 }
 
 .dropdown-toggle::after {
