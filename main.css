@@ -72,6 +72,13 @@ header a img:hover {
     color: #fff;
 }
 
+#menuHamburguer {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+}
 
 .menu {
     display: flex;
@@ -177,7 +184,7 @@ form input, form label, form textarea {
     margin-top: 15px;
 }
 
-#buttonForm:active {
+#buttonform:active {
     transform: scale(0.99);
 }
 
@@ -196,3 +203,80 @@ footer > .container {
     justify-content: center;
     align-items: center;
 }
+
+@media screen and (min-width: 1024px) {
+
+    /* Quando a tela for maior que 1024px */
+
+    #headerMobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+
+    /* Quando a tela for menor que 1024px */
+
+    #headerFixo {
+        display: none;
+    }
+
+    #headerMobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .botaoLogin #buttonLogin, header form button {
+        text-align: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    header a img {
+        margin-top: 10px;
+    }
+
+    .titulo a img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .menu-icon {
+        display: block;
+        font-size: 2em;
+        width: 90%;
+        text-align: center;
+        cursor: pointer;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    #menuHamburguer.show {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar ul {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .navbar ul li {
+        text-align: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar ul li a, .navbar ul li form, .navbar ul li div {
+        width: 100%;
+    }
+
+    .botaoLogin {
+        margin-left: 0;
+    }
+}
+

@@ -1,3 +1,8 @@
+function toggleMenu() {
+    const menu = document.getElementById('menuHamburguer');
+    menu.classList.toggle('show');
+}
+
 $(document).ready(function(){
 
     $('#telefone').mask('(00) 000000000');
